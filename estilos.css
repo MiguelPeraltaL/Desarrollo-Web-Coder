@@ -44,6 +44,17 @@ h1{
     flex-direction: column;
 }
 
+/* Animation*/
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 /* Layout*/
 
 .grid-body{
@@ -78,6 +89,8 @@ footer {
     grid-column: 1 / 5;
     grid-row: 1 / 2;
     width: 30%;
+    animation-name: aparecer;
+    animation-duration: 3s;
 }
 .finder{
     grid-column: 5 / 13;
