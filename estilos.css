@@ -183,6 +183,12 @@ footer p {
 
 /* Media Queries */
 
+@media screen and (max-width: 991px) {
+    nav{
+        height: 100px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     nav {
         flex-wrap: wrap;
