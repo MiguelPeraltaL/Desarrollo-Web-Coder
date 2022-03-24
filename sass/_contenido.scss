@@ -1,0 +1,50 @@
+/* Main */
+
+/* Main Contacto*/
+
+.formulario{
+    justify-content: center;
+    &__item{
+        width: 350px;
+    }
+}
+
+/* Main Producto */
+
+.orden{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.productos{
+    justify-content:space-around;
+}
+.foto-producto{
+    width: 80px;
+    height: 80px;
+}
+
+/* Main Carrito */
+
+table{
+    border-collapse: collapse;
+    border: black 1px solid;
+    text-align: center;
+}
+th{
+    background-color: $orange;
+}
+.eliminar-rojo{
+    color: red;
+}
+.img-carro{
+    width: 20px;
+    height: 20px;
+}
+.carrito{
+    &__detalle{
+        margin-bottom: 15px;
+    }
+    &__total{
+        margin-top: 15px;
+    }
+}
