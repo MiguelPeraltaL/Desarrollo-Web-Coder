@@ -1,5 +1,10 @@
 /* Main */
 
+@mixin tamaños($ancho, $alto) {
+    height: $alto;
+    width: $ancho;
+ } 
+
 /* Main Contacto*/
 
 .formulario{
@@ -12,16 +17,21 @@
 /* Main Producto */
 
 .orden{
-    justify-content: center;
+    // justify-content: center;   //Reemplazandolo por Extend
+    @extend .formulario;   //Extend
     margin-bottom: 20px;
 }
 .productos{
     justify-content:space-around;
 }
-.foto-producto{
-    width: 80px;
-    height: 80px;
-}
+// .foto-producto{   //Reemplazandolo por mixin
+//     width: 80px;
+//     height: 80px;
+// }
+//Aplicando mixin
+.foto-producto {
+    @include tamaños(80px, 80px);
+ } 
 
 /* Main Carrito */
 
@@ -36,10 +46,14 @@ th{
 .eliminar-rojo{
     color: red;
 }
-.img-carro{
-    width: 20px;
-    height: 20px;
-}
+// .img-carro{   //Reemplazandolo por mixin
+//     width: 20px;
+//     height: 20px;
+// }
+//Aplicando mixin
+.img-carro {
+    @include tamaños(20px, 20px);
+ }
 .carrito{
     &__detalle{
         margin-bottom: 15px;

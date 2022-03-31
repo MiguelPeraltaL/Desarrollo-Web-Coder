@@ -21,18 +21,39 @@ html{
 img{
     width: 100%;
 }
+// h1{   //Reemplazandolo por Map-get
+//     margin-top: 15px;
+//     margin-bottom: 15px;
+//     text-align: center;
+// }
+//Aplicando Map-get
+$setDatos: (
+  margen: 15px,
+  alineacion: center
+);
 h1{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: center;
+    margin-top: map-get($setDatos, margen);
+    margin-bottom: map-get($setDatos, margen);
+    text-align: map-get($setDatos, alineacion);
 }
 
 /* HELPERS */
 
+// .center{   //Reemplazandolo por Maps
+//     max-width: 1080px;
+//     width: 100%;
+//     margin: 0 auto;
+// }
+//Aplicando Maps
+$centrar: (
+    max-width: 1080px,
+    width: 100%,
+    margin: 0 auto
+); 
 .center{
-    max-width: 1080px;
-    width: 100%;
-    margin: 0 auto;
+    @each $propiedad, $atributo in $centrar {
+        #{$propiedad}: $atributo;
+    }
 }
 .flex-row {
     display: flex;

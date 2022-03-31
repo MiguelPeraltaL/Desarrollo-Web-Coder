@@ -96,22 +96,21 @@ footer {
 
 /* Main */
 /* Main Contacto*/
-.formulario {
+.formulario, .orden {
   justify-content: center; }
   .formulario__item {
     width: 350px; }
 
 /* Main Producto */
 .orden {
-  justify-content: center;
   margin-bottom: 20px; }
 
 .productos {
   justify-content: space-around; }
 
 .foto-producto {
-  width: 80px;
-  height: 80px; }
+  height: 80px;
+  width: 80px; }
 
 /* Main Carrito */
 table {
@@ -126,8 +125,8 @@ th {
   color: red; }
 
 .img-carro {
-  width: 20px;
-  height: 20px; }
+  height: 20px;
+  width: 20px; }
 
 .carrito__detalle {
   margin-bottom: 15px; }
@@ -144,7 +143,7 @@ th {
   nav {
     flex-wrap: wrap;
     font-size: .6em; }
-  .formulario .formulario__item {
+  .formulario .formulario__item, .orden .formulario__item {
     width: 250px; }
   .img-carro {
     width: 10px;

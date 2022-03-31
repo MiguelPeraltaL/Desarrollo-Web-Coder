@@ -1,0 +1,12 @@
+Se incorporó en cada HTML:
+
+<meta name="description" content="Tienda Web Online con miles de descuentos">
+<meta name="keywords"  content="TIENDA, ONLINE, WEB, PRODUCTO, OFERTA, DESCUENTO, BLACKFRIDAY">
+
+Se diferencia el <title> de cada página
+
+<title>WebShop</title>
+<title>WebShop-Nosotros</title>
+<title>WebShop-Productos</title>
+<title>WebShop-Carrito</title>
+<title>WebShop-Contacto</title>
